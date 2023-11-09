@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.CourseDescriptionPageAllBox {
+  margin-top: 4%;
+  margin-left: 8.5%;
+}
+.FirstTwoInfoBox {
+  display: flex;
+}
+
+.TeacherInfoBox-1 {
+  background-color: white;
+  margin-right: 49px;
+  width: 490px;
+  height: 700px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+
+.TeacherName {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-left: 13px;
+  padding-top: 10px;
+}
+
+.TeacherPosition {
+  color: #868686;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 13px;
+}
+
+.TeacherDescription {
+  color: #acacac;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+  padding-left: 13px;
+  padding-top: 15px;
+}
+
+.MoreAboutTeacher {
+  color: #ff7426;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 13px;
+  padding-top: 22px;
+  padding-bottom: 11px;
+}
+
+.Tick {
+  padding-left: 25px;
+  padding-bottom: 12px;
+  height: 30px;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center;
+}
+
+.ListItemText {
+  margin-bottom: 12px;
+  padding-left: 12\px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.CourseInfoBox-1 {
+  background-color: white;
+  margin-right: 49px;
+  width: 730px;
+  height: 1137px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.CourseInfo-Title{
+  padding-top: 58px;
+  padding-bottom: 14px;
+  color: #ff7426;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.CourseInfoBox {
+  text-align: center;
+}
+
+.CourseInfo-Buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddToCart {
+  width: 312px;
+  height: 61.674px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #ff7426;
+  margin-top: 26px;
+  margin-bottom: 16px;
+}
+
+.AddToCart::first-line {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.BuyNow {
+  width: 312px;
+  height: 61.674px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 2px solid #000;
+  background: #fff;
+}
+
+.BuyNow::first-line {
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ImageContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.CourseInfo-Image {
+  max-width: 100%;
+}
+
+.CourseInfo-PlayNowButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.PreviewNow-Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 167px;
+  height: 30px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  color: #ff7426;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.CourseDetails-Info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CourseDetails-Orange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29px;
+  height: 24px;
+  color: #ff7426;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 5px;
+  text-decoration: underline;
+}
+
+.CourseInfo-Stroke {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.CourseDetails-Black {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.CourseDetails-Grey {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #808080;
+  text-align: center;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.LearnTitle {
+  text-align: left;
+  padding-left: 54px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.custom-list-subject {
+  padding-left: 90px;
+}
+
+.ListItemText-subject {
+  margin-bottom: 12px;
+  padding-left: 12px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.SubjectInfoBox {
+  background-color: white;
+  width: 490px;
+  height: 405px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  color: #2d2f2e;
+  padding-left: 52px;
+  padding-top: 48px;
+  line-height: 1;
+}
+
+.SubjectInfoBox-Title {
+  padding-bottom: 28px;
+  font-size: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+
+}
+
+
+
+.SubjectInfoItem img {
+  margin-right: 12px;
+  margin-bottom: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.SubjectInfoItem {
+  display: flex;
+  align-items: center;
+}
+
+.CommentSectionBox {
+  margin-top: 32px;
+  width: 1269px;
+  height: 938px;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  height: 600px; 
+  overflow-y: auto; 
+  margin-bottom: 100px;
+}
+
+.Comment-Title {
+  color: #9b9b9b;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 52px;
+  padding-top: 24px;
+}
+
+.CommentBox {
+  display: flex;
+  padding: 68px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.round-image {
+  border-radius: 50%; /* Make the user image round */
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
+.comment-user-reflection {
+  flex: 1;
+  padding-left: 40px;
+  color: #a3a0a0;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.comment-user-name {
+  font-weight: bold;
+  color: #000;
+  font-family: Inter;
+  font-size: 34.497px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.comment-user-comment {
+  /* Add styles for the user comment */
+}
+
+.comment-user-date {
+  align-self: flex-start;
+  color: #a3a0a0;
+  font-family: Inter;
+  font-size: 24.641px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.TeacherImage {
+  margin-top: 14px;
+  margin-left: 13px;
+  width: 464px;
+  height: 238px;
+  flex-shrink: 0;
+  border-radius: 15px;
+}

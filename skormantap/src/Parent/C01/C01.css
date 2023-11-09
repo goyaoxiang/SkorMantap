@@ -1,0 +1,405 @@
+/* Universal */
+.C01 .more a {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ff7426;
+}
+
+.C01 .C01 .more a:hover {
+  text-decoration: underline;
+}
+
+.C01 ol {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.C01 ol li {
+  width: 8px;
+  height: 8px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  margin: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.C01 ol .active {
+  background-color: black;
+}
+
+.C01 .prev span,
+.C01 .next span {
+  color: black;
+  font-size: 30px;
+}
+
+.C01 .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
+
+.C01 .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
+/* Navbar */
+.C01 .navbar {
+  height: 70px;
+  background-color: #ff7426;
+  display: flex;
+  justify-content: space-between;
+}
+
+.C01 .navleft ul {
+  display: flex;
+}
+
+.C01 .navright ul {
+  display: flex;
+}
+
+.C01 .navbar ul li {
+  display: block;
+  padding: 0 20px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  font-family: DM Serif Text;
+}
+
+.C01 .navbar ul li a {
+  color: #e8e8e8;
+}
+
+.C01 .navleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.C01 .navright img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Children List */
+.C01 .childList {
+  margin-top: 50px;
+}
+
+.C01 .childList ul {
+  display: flex;
+}
+
+.C01 .childList ul li {
+  width: 170px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.C01 .childList ul li a {
+  font-size: 20px;
+  font-family: DM Serif Text;
+  color: black;
+  font-weight: bold;
+}
+
+.C01 .childList ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff7426;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+}
+
+.C01 .childList ul li:nth-last-child(1) {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.C01 .childList ul li:nth-last-child(1) a {
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.C01 .childList ul li:nth-last-child(1):hover {
+  text-decoration: none;
+}
+
+/* announcement */
+.C01 .announcement h4 {
+  margin-top: 50px;
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: DM Serif Text;
+}
+
+.C01 .announcement .frame {
+  position: relative;
+  width: 1120px;
+  height: 353px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding-top: 63px;
+}
+
+.C01 .announcement .content {
+  position: relative;
+  width: 952px;
+  height: 220px;
+  background-color: #ebebeb;
+  margin: auto;
+}
+
+.C01 .announcement .content .material {
+  padding-left: 150px;
+  padding-top: 31px;
+}
+
+.C01 .announcement .content img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 50px;
+  top: 50px;
+}
+
+.C01 .announcement .content .date {
+  text-align: right;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: 500;
+  padding-right: 45px;
+  color: #666262;
+}
+
+.C01 .announcement .content .title {
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.C01 .announcement .content .tutor {
+  padding-top: 10px;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff7426;
+  font-weight: bold;
+}
+
+.C01 .announcement .content .text {
+  padding-top: 10px;
+  font-family: DM Serif Text;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #6d6262;
+}
+
+.C01 .announcement .content .read-more {
+  font-family: DM Serif Text;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff7426;
+}
+
+.C01 .announcement .content .read-more:hover {
+  text-decoration: underline;
+}
+
+/* Upcoming Classes */
+.C01 .upcoming {
+  margin-top: 55px;
+}
+
+.C01 .upcoming h4 {
+  margin-top: 50px;
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: DM Serif Text;
+}
+
+.C01 .upcoming .frame {
+  position: relative;
+  width: 1120px;
+  height: 381px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.C01 .upcoming .content ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 66px 159px;
+  padding-bottom: 40px;
+}
+.C01 .upcoming .content .material {
+  width: 231px;
+  height: 227px;
+  padding: 17px;
+  padding-top: 40px;
+  background-color: #ebebeb;
+}
+
+.C01 .upcoming .material .title {
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.C01 .upcoming .material .top,
+.C01 .upcoming .material .bottom {
+  padding-left: 15px;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: 600;
+  color: #666262;
+}
+
+.C01 .upcoming .material .top {
+  padding-top: 18px;
+}
+
+.C01 .upcoming .material .bottom {
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+
+.C01 .upcoming .material .date,
+.C01 .upcoming .material .time {
+  padding-left: 16px;
+}
+
+.C01 .upcoming .details {
+  padding-left: 60px;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff7426;
+}
+
+.C01 .upcoming ol {
+  padding-top: 0px;
+}
+
+/* Assessment Results */
+.C01 .result {
+  margin-top: 55px;
+}
+
+.C01 .result h4 {
+  margin-top: 50px;
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: DM Serif Text;
+}
+
+.C01 .result .frame {
+  position: relative;
+  width: 1120px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.C01 .result .frame .data {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: 600;
+  color: #666262;
+}
+
+/* Enrolled Courses */
+.C01 .enrolled {
+  margin-top: 55px;
+}
+
+.C01 .enrolled h4 {
+  margin-top: 50px;
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-family: DM Serif Text;
+}
+
+.C01 .enrolled .frame {
+  position: relative;
+  padding-top: 10px;
+  width: 1120px;
+  height: 332px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.C01 .enrolled .title {
+  display: flex;
+  padding-top: 27px;
+  margin-left: 63px;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: bold;
+  color: #666262;
+}
+
+.C01 .enrolled .title p {
+  margin-left: 10px;
+}
+
+.C01 .enrolled .mode ul {
+  padding: 0 110px;
+  padding-top: 10px;
+}
+
+.C01 .enrolled .mode ul li {
+  padding-bottom: 5px;
+  list-style: square;
+  color: #ff7426;
+}
+
+.C01 .enrolled .mode ul li a {
+  color: #ff7426;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: 600;
+}

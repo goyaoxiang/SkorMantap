@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+.CourseDescriptionPageAllBox {
+  margin-top: 4%;
+  margin-left: 8.5%;
+}
+.FirstTwoInfoBox {
+  display: flex;
+}
+
+.TeacherInfoBox {
+  background-color: white;
+  margin-right: 49px;
+  width: 490px;
+  height: 457px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+}
+
+.TeacherName {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding-left: 13px;
+  padding-top: 10px;
+}
+
+.TeacherPosition {
+  color: #868686;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 13px;
+}
+
+.TeacherDescription {
+  color: #acacac;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 137.5%;
+  padding-left: 13px;
+  padding-top: 15px;
+}
+
+.MoreAboutTeacher {
+  color: #ff7426;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 13px;
+  padding-top: 22px;
+  padding-bottom: 11px;
+}
+
+/* code for subject start here */
+.CourseInfoBox {
+  background-color: white;
+  margin-right: 49px;
+  width: 730px;
+  height: 457px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.CourseInfo-Title {
+  padding-top: 42px;
+  padding-bottom: 18px;
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.CourseInfo-Description-Box {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.CourseInfo-Description {
+  padding-top: 46px;
+  padding-bottom: 27px;
+  color: #000;
+  font-family: Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.CourseInfo-seereview {
+  color: #083eff;
+  text-align: center;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 16px;
+}
+
+.CourseInfo-button {
+  width: 207px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 96px;
+  background: #ff7426;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Code for course content start here */
+.CourseContent-Box {
+  width: 286px;
+  height: 979px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.Accordion-Section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Accordion-Button {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffd25f 0%, #fec583 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Accordion-Button:active {
+  transform: scale(0.95);
+}
+
+.Accordion-Button.active {
+  background: linear-gradient(180deg, #fec583 0%, #ffd25f 100%);
+}
+
+.Accordion-Content {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 251px;
+  height: auto;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.Accordion-Content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Accordion-Content ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.Accordion-Content ul li:last-child {
+  border-bottom: none;
+}
+
+.Accordion-Button.active .Accordion-Content {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Accordion-Content ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.button-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-symbol {
+  text-align: right;
+}
+
+.dropdown-symbol.rotate {
+  transform: rotate(180deg);
+}
+
+/* Code for embed starts here */
+.embedsize {
+  margin-left: 61px;
+  width: 925px;
+  height: 971px;
+}
+
+.Biggest-box{
+  display: flex;
+}
+
+/* Code for comments start here */
+.CommentSectionBox {
+  margin-top: 32px;
+  width: 1269px;
+  height: 938px;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  height: 600px;
+  overflow-y: auto;
+  margin-bottom: 100px;
+}
+
+.Comment-Title {
+  color: #9b9b9b;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 52px;
+  padding-top: 24px;
+}
+
+.CommentBox {
+  display: flex;
+  padding: 68px;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
+.round-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.comment-user-reflection {
+  flex: 1;
+  padding-left: 40px;
+  color: #a3a0a0;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.comment-user-name {
+  font-weight: bold;
+  color: #000;
+  font-family: Inter;
+  font-size: 34.497px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.comment-user-date {
+  align-self: flex-start;
+  color: #a3a0a0;
+  font-family: Inter;
+  font-size: 24.641px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.TeacherImage {
+  margin-top: 14px;
+  margin-left: 13px;
+  width: 464px;
+  height: 238px;
+  flex-shrink: 0;
+  border-radius: 15px;
+}
+
+
+
+.Lesson-TwoBox{
+  display: flex;
+}

@@ -1,0 +1,196 @@
+/* Universal */
+
+.C03 ol {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.C03 ol li {
+  width: 8px;
+  height: 8px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  margin: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.C03 ol .active {
+  background-color: black;
+}
+
+.C03 .prev span,
+.C03 .next span {
+  color: black;
+  font-size: 30px;
+}
+
+.C03 .prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
+
+.C03 .next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
+/* Navbar */
+.C03 .navbar {
+  height: 70px;
+  background-color: #ff7426;
+  display: flex;
+  justify-content: space-between;
+}
+
+.C03 .navleft ul {
+  display: flex;
+}
+
+.C03 .navright ul {
+  display: flex;
+}
+
+.C03 .navbar ul li {
+  display: block;
+  padding: 0 20px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  font-family: DM Serif Text;
+}
+
+.C03 .navbar ul li a {
+  color: #e8e8e8;
+}
+
+.C03 .navleft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.C03 .navright img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Children List */
+.C03 .childList {
+  margin-top: 50px;
+}
+
+.C03 .childList ul {
+  display: flex;
+}
+
+.C03 .childList ul li {
+  width: 170px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.C03 .childList ul li a {
+  font-size: 20px;
+  font-family: DM Serif Text;
+  color: black;
+  font-weight: bold;
+}
+
+.C03 .childList ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff7426;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+}
+
+.C03 .childList ul li:nth-last-child(1) {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.C03 .childList ul li:nth-last-child(1) a {
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.C03 .childList ul li:nth-last-child(1):hover {
+  text-decoration: none;
+}
+
+/* Frame */
+.C03 .frame {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  padding-top: 51px;
+  width: 1120px;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.C03 .frame .title {
+  margin-left: 95px;
+  padding-bottom: 15px;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.C03 .frame .desc {
+  margin-left: 95px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  color: #7f7f7f;
+}
+
+.C03 .frame form {
+  margin-top: 50px;
+  margin-left: 95px;
+}
+
+.C03 .frame input {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  width: 800px;
+  height: 48px;
+  background-color: #f5f5f5;
+  border-color: #3d3d3d;
+  border-width: 1px;
+}
+
+.C03 .frame input::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7f7f7f;
+}
+
+.C03 .frame input[type='submit'] {
+  margin-top: 30px;
+  padding-left: 0;
+  width: 200px;
+  height: 48px;
+  background-color: #ff7426;
+  border-color: #ff7426;
+  border-width: 1px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
