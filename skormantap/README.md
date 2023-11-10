@@ -34,3 +34,5 @@ Contact us, *team daheckkkk*, for more details!
 Useful Links:
 * [Video Presentation](https://youtu.be/pTtonqS6PG0)
 * [Project Website](https://skormantap.netlify.app/)
+
+> Note: Project website best viewed in resolution of **1920x1080** with scale of **100%**
