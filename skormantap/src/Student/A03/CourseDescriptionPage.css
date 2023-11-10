@@ -2,7 +2,7 @@
 
 .CourseDescriptionPageAllBox {
   margin-top: 4%;
-  margin-left: 8.5%;
+  margin-left: 300px;
 }
 .FirstTwoInfoBox {
   display: flex;
@@ -12,11 +12,12 @@
   background-color: white;
   margin-right: 49px;
   width: 490px;
-  height: 700px;
+  height: 720px;
   flex-shrink: 0;
   border-radius: 14px;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 32px;
+  padding-top: 10px;
 }
 
 .TeacherName {
@@ -95,7 +96,7 @@
   text-align: center;
 }
 
-.CourseInfo-Title{
+.CourseInfo-Title {
   padding-top: 58px;
   padding-bottom: 14px;
   color: #ff7426;
@@ -118,6 +119,7 @@
 }
 
 .AddToCart {
+  display: block;
   width: 312px;
   height: 61.674px;
   flex-shrink: 0;
@@ -137,6 +139,8 @@
 }
 
 .BuyNow {
+  display: block;
+
   width: 312px;
   height: 61.674px;
   flex-shrink: 0;
@@ -268,26 +272,24 @@
 .SubjectInfoBox {
   background-color: white;
   width: 490px;
-  height: 405px;
+  height: 390px;
   flex-shrink: 0;
   border-radius: 14px;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
   color: #2d2f2e;
   padding-left: 52px;
-  padding-top: 48px;
+  padding-top: 38px;
   line-height: 1;
 }
 
 .SubjectInfoBox-Title {
+  margin-top: 5px;
   padding-bottom: 28px;
   font-size: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 600;
-
 }
-
-
 
 .SubjectInfoItem img {
   margin-right: 12px;
@@ -309,8 +311,8 @@
   background-color: white;
   border-radius: 14px;
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
-  height: 600px; 
-  overflow-y: auto; 
+  height: 600px;
+  overflow-y: auto;
   margin-bottom: 100px;
 }
 

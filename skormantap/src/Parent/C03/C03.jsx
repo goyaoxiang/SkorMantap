@@ -1,43 +1,14 @@
-import '../../index.css'
-import './C03.css'
-import logo from '../SkorMantap-Logo.png'
-import man from '../C01/mr bean photo.jpg'
-import '../iconfont/iconfont.css'
+import "../../index.css";
+import "./C03.css";
+import "../../components/iconfont/iconfont.css";
+import { ParentNavbar } from "../../components/Navbar/Navbar";
+import Footer from "components/Footer/Footer";
 
 export const C03 = () => {
   return (
     <div className="C03">
       <section>
-        <div className="navbar">
-          <div className="navleft">
-            <ul>
-              <li>
-                <a href="#">
-                  <img src={logo} alt="SkorMantap" />
-                </a>
-              </li>
-              <li>
-                <a href="#">Children</a>
-              </li>
-              <li>
-                <a href="#">Courses</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="navright">
-            <ul>
-              <li>
-                <a href="#">Language</a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src={logo} alt="User Profile" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ParentNavbar />
 
         <div className="childList wrapper">
           <ul>
@@ -70,13 +41,14 @@ export const C03 = () => {
             <br />
             <input type="text" name="" id="" placeholder="Email Address" />
             <br />
-            <hr style={{ marginTop: '40px', width: '800px' }} />
+            <hr style={{ marginTop: "40px", width: "800px" }} />
             <input type="submit" value={`Register`} />
           </form>
         </div>
+        <Footer />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default C03
+export default C03;

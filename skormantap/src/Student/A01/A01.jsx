@@ -1,59 +1,20 @@
-// import "../../index.css";
+import "../../index.css";
 import React from "react";
 import "./A01.css";
-import logo from "../../../public/images/img_image6.png";
+import { StudentNavbar } from "../../components/Navbar/Navbar";
 import man from "./mr bean photo.jpg";
+import BarChart from "./BarChart.jpg";
+import LineChart from "./LineChart.jpg";
+import PieChart from "./PieChart.jpg";
 import { Link } from "react-router-dom";
-// import "../iconfont/iconfont.css";
+import Footer from "../../components/Footer/Footer";
+import "../../components/iconfont/iconfont.css";
 
 export const A01 = () => {
   return (
-    <div className="C01">
+    <div className="A01">
       <section>
-        <div className="navbar">
-          <div className="navleft">
-            <ul>
-              <li>
-                <a href="#">
-                  <img src={logo} alt="SkorMantap" />
-                </a>
-              </li>
-              <li>
-                <a href="#">Dashboard</a>
-              </li>
-              <li>
-                <Link to="/student/courses">Courses</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="navright">
-            <ul>
-              <li>
-                <a href="#">Language</a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src={logo} alt="User Profile" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* <div className="childList wrapper">
-          <ul>
-            <li>
-              <a href="#">CHILDREN 1</a>
-            </li>
-            <li>
-              <a href="#">CHILDREN 2</a>
-            </li>
-            <li>
-              <a href="#">+</a>
-            </li>
-          </ul>
-        </div> */}
+        <StudentNavbar />
 
         <div className="announcement wrapper">
           <div>
@@ -177,8 +138,15 @@ export const A01 = () => {
           </div>
 
           <div className="frame">
-            <span className="data">No data Found</span>
-
+            <div className="barchart">
+              <img src={BarChart} className="chart" alt="BarChart" />
+            </div>
+            <div className="piechart">
+              <img src={PieChart} className="chart" alt="PieChart" />
+            </div>
+            <div className="linechart">
+              <img src={LineChart} className="chart" alt="LineChart" />
+            </div>
             <span className="more">
               <a href="#">{`More >`}</a>
             </span>
@@ -228,19 +196,19 @@ export const A01 = () => {
 
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="/student/course_dashboard">
                     Wong Physics Wong Physics Wong Physics Wong Physics
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/student/course_dashboard">
                     Wong Physics Wong Physics Wong Physics Wong Physics
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
+                  <Link to="/student/course_dashboard">
                     Wong Physics Wong Physics Wong Physics Wong Physics
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -252,9 +220,10 @@ export const A01 = () => {
           style={{
             marginTop: "50px",
             height: "50px",
-            backgroundColor: "#ff7426",
+            // backgroundColor: "#ff7426",
           }}
         ></div>
+        <Footer />
       </section>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import "./CoursesSelection.css";
-import Navbar from "../Components/Navbar";
+import { StudentNavbar } from "../../components/Navbar/Navbar";
 import clockIcon from "./clock.svg";
 import stars from "./5-stars.png";
 import modeIcon from "./mode.svg";
@@ -8,6 +8,7 @@ import syllabusIcon from "./syllabus.svg";
 import subjectIcon from "./subject.svg";
 import ratingIcon from "./rating.svg";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const Courses = [
   {
@@ -97,7 +98,7 @@ const books = [
 function A02() {
   return (
     <>
-      <Navbar />
+      <StudentNavbar />
       <SearchBar />
       <FilterComponent />
 
@@ -116,6 +117,7 @@ function A02() {
           })}
         </div>
       </section>
+      <Footer />
     </>
   );
 }
@@ -212,7 +214,7 @@ function CoursesComponent(props) {
 
           <div className="CourseClass-Components-Clock">
             <img
-              src={clockIcon}
+              src={syllabusIcon}
               className="FilterComponent-SVG"
               alt="Clock Logo"
             />
@@ -221,7 +223,7 @@ function CoursesComponent(props) {
 
           <div className="CourseClass-Components-Clock">
             <img
-              src={clockIcon}
+              src={ratingIcon}
               className="FilterComponent-SVG"
               alt="Clock Logo"
             />

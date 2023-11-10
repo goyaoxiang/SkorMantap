@@ -1,14 +1,18 @@
 .tutor-dashboard {
   display: flex;
   flex-direction: column;
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .index {
   align-items: center;
-  background-color: #ebebeb;
   display: flex;
   flex-direction: column;
-  height: 1212px;
   overflow: hidden;
   width: 100%;
 }
@@ -17,10 +21,10 @@
   min-width: 1120px;
 }
 
-.index .announcement-area {
+.index .statistic-area {
   align-items: center;
   background-color: #fec583;
-  flex-direction: column;
+  /* flex-direction: column; */
   display: flex;
   height: 300px;
   width: 50%;
@@ -28,27 +32,32 @@
   min-width: 1120px;
   padding: 10px 35px;
   border-radius: 5px;
+  justify-content: space-between;
 }
-.index .announcement-area-text {
-  text-align: center;
+
+.chart {
+  height: 250px;
+  border-radius: 14px;
 }
 
 .index .enrolled-courses-area {
   align-items: left;
-  background-color: #c37922;
   flex-direction: column;
   display: flex;
   height: 542px;
-  width: 50%;
   margin-top: 50px;
-  min-width: 1120px;
+  margin-bottom: 80px;
   padding: 10px 0px;
-  border-radius: 5px;
+  position: relative;
+  padding-top: 10px;
+  width: 1120px;
+  background-color: #fff;
+  border-radius: 20px;
 }
 
 .index .courses-area {
   align-items: left;
-  background-color: #ff900f;
+  background-color: #f8f8f8;
   flex-direction: column;
   display: flex;
   height: 239px;
@@ -63,248 +72,27 @@
 
 .index .title {
   height: 60px;
-  background-color: #e77d03;
+  background-color: #fdf6ee;
   min-width: 1120px;
   padding: 10px 35px;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: bold;
+  color: #666262;
 }
 
 .index .courses {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 35px;
+  padding-left: 80px;
   height: 100%;
 }
 
-/* .index .announcement-area {
-  background-color: var(--macaroni-cheese);
-  height: 70px;
-  min-width: 235px;
-  padding: 21px 86px;
+.courses li {
+  color: #ff7426;
+  font-family: DM Serif Text;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  list-style: square;
 }
-
-.index .logo {
-  letter-spacing: 0;
-  line-height: normal;
-  min-height: 22px;
-  white-space: nowrap;
-}
-
-.index .overlap-group1 {
-  align-items: flex-start;
-  background-color: var(--macaroni-cheese);
-  display: flex;
-  height: 70px;
-  margin-left: 20px;
-  min-width: 265px;
-  padding: 21px 54px;
-}
-
-.index .dashboard {
-  letter-spacing: 0;
-  line-height: normal;
-  min-height: 22px;
-  text-align: center;
-  white-space: nowrap;
-  width: 156px;
-}
-
-
-
-.index .courses {
-  letter-spacing: 0;
-  line-height: normal;
-  min-height: 22px;
-  text-align: center;
-  white-space: nowrap;
-  width: 211px;
-}
-
-.index .overlap-group4 {
-  align-items: flex-start;
-  background-color: var(--black);
-  display: flex;
-  height: 70px;
-  margin-left: 114px;
-  min-width: 170px;
-  padding: 21px 41px;
-}
-
-.index .language {
-  letter-spacing: 0;
-  line-height: normal;
-  min-height: 22px;
-  white-space: nowrap;
-}
-
-.index .overlap-group5 {
-  align-items: flex-start;
-  background-color: var(--black);
-  display: flex;
-  height: 70px;
-  margin-left: 20px;
-  min-width: 235px;
-  padding: 21px 61px;
-}
-
-.index .user-profile {
-  letter-spacing: 0;
-  line-height: normal;
-  min-height: 22px;
-  white-space: nowrap;
-}
-
-.index .over-container {
-  height: 300px;
-  margin-left: 2.0px;
-  margin-top: 41px;
-  position: relative;
-  width: 1122px;
-}
-
-.index .overlap-group6 {
-  align-items: flex-start;
-  background-color: var(--macaroni-cheese);
-  display: flex;
-  height: 300px;
-  justify-content: flex-end;
-  left: 0;
-  min-width: 1120px;
-  padding: 88px 329px;
-  position: absolute;
-  top: 0;
-}
-
-.index .announcement-area-li {
-  height: 107px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: center;
-  width: 461px;
-}
-
-.index .overview-about-total-students-enrolled {
-  height: 107px;
-  left: 305px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 149px;
-  width: 461px;
-}
-
-.index .enrolled-courses-area {
-  align-items: flex-start;
-  display: flex;
-  margin-top: 29px;
-  min-width: 1122px;
-}
-
-.index .overlap-group7 {
-  height: 542px;
-  position: relative;
-  width: 1124px;
-}
-
-.index .bg {
-  background-color: #c27822;
-  height: 542px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1120px;
-}
-
-.index .title {
-  color: var(--white);
-  font-family: var(--font-family-dm_serif_text);
-  font-size: var(--font-size-l);
-  font-weight: 400;
-  height: 60px;
-  left: 1px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 149px;
-}
-
-.index .component-2 {
-  top: 303px;
-}
-
-.index .x-courses {
-  color: var(--white);
-  font-family: var(--font-family-dm_serif_text);
-  font-size: var(--font-size-m);
-  font-weight: 400;
-}
-
-.index .overlap-group {
-  align-items: flex-end;
-  background-color: #ff900e;
-  display: flex;
-  height: 179px;
-  justify-content: flex-end;
-  min-width: 1120px;
-  padding: 59px 427px;
-}
-
-.index .component-1 {
-  top: 64px;
-}
-
-.index .footer {
-  align-items: flex-start;
-  background-color: transparent;
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 1;
-  justify-content: flex-start;
-  margin-left: 2.0px;
-  margin-top: 89px;
-  min-width: 1442px;
-  width: auto;
-}
-
-.index .overlap-group8 {
-  align-items: flex-start;
-  background-color: var(--black);
-  display: flex;
-  height: 140px;
-  min-width: 1440px;
-  padding: 50px 662px;
-}
-
-.index .footer-1 {
-  height: 23px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: center;
-  white-space: nowrap;
-  width: 114px;
-}
-
-.index .component {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  left: 0;
-  min-height: 239px;
-  position: absolute;
-  width: 1124px;
-}
-
-.index .overlap-group-2 {
-  align-items: flex-start;
-  display: flex;
-}
-
-.index .x {
-  height: 60px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: center;
-  width: 265px;
-} */

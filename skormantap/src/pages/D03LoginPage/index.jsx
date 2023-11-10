@@ -2,7 +2,11 @@ import React from "react";
 import { useState } from "react";
 import { Button, Img, Input, Text } from "components";
 import { Link, useLocation } from "react-router-dom";
-import Footer from "components/Footer";
+import Footer from "components/Footer/Footer";
+import rectangleFour from "../../assets/Images/public/img_rectangle4.png";
+import frame from "../../assets/Images/public/img_frame.svg";
+import Frame from "../../assets/Images/public/img_frame_gray_900.svg";
+import image_group6 from "../../assets/Images/public/img_group6.png";
 
 const D03LoginPagePage = () => {
   const [password, setPassword] = useState("");
@@ -27,41 +31,31 @@ const D03LoginPagePage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 font-poppins h-[2050px] mx-auto relative w-full">
+      <div className="bg-white-A700 font-poppins h-[1366px] mx-auto relative w-full">
         <div
-          className="bg-cover bg-no-repeat h-[2050px] md:h-[599px] m-auto pb-[1301px] md:px-5 w-full"
-          style={{ backgroundImage: "url('images/img_group6.png')" }}
+          className="bg-cover bg-no-repeat h-[1366px] md:h-[599px] m-auto pb-[1301px] md:px-5 w-full"
+          style={{ backgroundImage: `url(${image_group6})` }}
         >
-          <div className="absolute flex flex-col gap-2 items-center justify-start right-[10%] top-[9%]">
+          <div className="absolute flex flex-col gap-2 items-center justify-start right-[10%] top-[18%]">
             <Text
               className="md:text-5xl text-[100px] text-center text-gray-900"
               size="txtArialBold100"
+              style={{
+                transform: "translate(-125px, -20px)",
+              }}
             >
               Welcome
             </Text>
             <Text
               className="text-center text-gray-900 text-xl"
               size="txtPoppinsRegular20"
+              style={{ transform: "translate(-125px, -20px)" }}
             >
               Login to start with SkorMantap
             </Text>
           </div>
           <form onSubmit={(e) => handleSubmit(e)}>
-            <div className="absolute md:h-[305px] h-[306px] right-[9%] top-[19%] w-[32%] sm:w-full">
-              <Input
-                name="groupTwo"
-                placeholder="Password"
-                className="leading-[normal] p-0 placeholder:text-gray-900 text-left text-sm w-full"
-                wrapClassName="absolute flex inset-x-[0] mt-[92px] mx-auto rounded-[13px] top-[0] w-full"
-                type="password"
-                prefix={
-                  <Img
-                    className="mr-[7px] my-auto"
-                    src="images/img_frame.svg"
-                    alt="Frame"
-                  />
-                }
-              ></Input>
+            <div className="absolute md:h-[305px] h-[306px] right-[9%] top-[35%] w-[32%] sm:w-full">
               <div className="absolute flex flex-col h-full inset-[0] items-center justify-center m-auto w-full">
                 <Input
                   name="groupOne"
@@ -70,11 +64,17 @@ const D03LoginPagePage = () => {
                   wrapClassName="flex w-full"
                   type="email"
                   prefix={
-                    <Img
-                      className="mr-[7px] my-auto"
-                      src="images/img_frame_gray_900.svg"
-                      alt="Frame"
-                    />
+                    <Img className="mr-[7px] my-auto" src={Frame} alt="Frame" />
+                  }
+                ></Input>
+                <Input
+                  name="groupTwo"
+                  placeholder="Password"
+                  className="leading-[normal] p-0 placeholder:text-gray-900 text-left text-sm w-full"
+                  wrapClassName="absolute flex inset-x-[0] mt-[92px] mx-auto rounded-[13px] top-[0] w-full"
+                  type="password"
+                  prefix={
+                    <Img className="mr-[7px] my-auto" src={frame} alt="frame" />
                   }
                 ></Input>
                 <Link to={next_path}>
@@ -104,8 +104,8 @@ const D03LoginPagePage = () => {
             </div>
           </form>
           <Img
-            className="absolute h-[599px] left-[8%] object-cover rounded-[40px] top-[7%] w-[41%]"
-            src="images/img_rectangle4.png"
+            className="absolute h-[599px] left-[8%] object-cover rounded-[40px] top-[15%] w-[41%]"
+            src={rectangleFour}
             alt="rectangleFour"
           />
           <div className="absolute bg-yellow-900 flex flex-row font-dmseriftext md:gap-10 inset-x-[0] items-center justify-between mx-auto p-[18px] top-[0] w-full">
@@ -127,7 +127,7 @@ const D03LoginPagePage = () => {
             </div>
           </div>
         </div>
-        <Footer className="absolute bg-gray-100 bottom-[0] flex font-gilroybold gap-2.5 h-[418px] md:h-auto inset-x-[0] items-center justify-center mx-auto outline outline-[1.5px] outline-blue_gray-100 md:px-5 rounded-tl-[56px] rounded-tr-[56px] w-full" />
+        <Footer className="absolute bottom-[0]" />
       </div>
     </>
   );

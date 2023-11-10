@@ -5,7 +5,6 @@
 
 .index {
   align-items: left;
-  background-color: #ebebeb;
   display: flex;
   flex-direction: column;
   height: 1400px;
@@ -38,7 +37,7 @@
   border-radius: 14px;
 }
 
-.CourseClass {
+.Course-Class {
   padding: 10px;
   width: 100%;
   height: 214px;
@@ -48,7 +47,7 @@
   position: relative;
 }
 
-.CourseClass-Image {
+.Course-Class-Image {
   height: 194px;
   /* width: 100%; */
   border-radius: 14px;
@@ -60,7 +59,7 @@
   width: 360px;
 }
 
-.CourseClass-Subject {
+.Course-Class-Subject {
   width: 253px;
   height: 34px;
   flex-shrink: 0;
@@ -72,7 +71,7 @@
   font-weight: 550;
 }
 
-.CourseClass-Teacher {
+.Course-Class-Teacher {
   font-size: 16px;
   margin-top: -5px;
   margin-bottom: 10px;
@@ -89,7 +88,7 @@
   width: 358px;
 }
 
-.CourseClass-Components {
+.Course-Class-Components {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -103,35 +102,41 @@
   padding: 5px;
 }
 
-.CourseClass-Components-Clock {
+.Course-Class-Components-Icon {
   display: flex;
   width: 120px;
-  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
 }
 
-.CourseClass-text {
+.FilterComponent {
+  height: 19px;
+}
+
+.Course-Class-text {
+  font-size: 14px;
   padding: 1px;
   margin-left: 4px;
 }
 
-.CourseClass-Description {
+.Course-Class-Description {
   margin-left: 400px;
   margin-top: 20px;
   width: 480px;
 }
 
-.CourseClass-Edit {
+.Course-Class-Edit {
   display: flex;
   position: absolute;
   top: 30px;
   right: 30px;
 }
 
-.CourseClass-Edit-Button {
+.Course-Class-Edit-Button {
   background: #ff900f;
   border-radius: 5px;
   width: 100px;
-  height: 5%;
+  height: 60px;
   color: #fff;
   font-family: Poppins;
   font-size: 15px;
@@ -141,16 +146,21 @@
   text-align: center;
 }
 
-.CourseClass-Edit-Button:hover,
-.add-course-button:active {
+.Course-Class-Edit-Button:hover {
   background: white;
   color: #ff7426;
   border-color: #ff7426;
 }
 
-.CourseClass-Edit-Button:active,
+.Course-Class-Edit-Button:active,
 .add-course-button:hover {
   background: #ff7426;
   color: white;
+  border-color: #ff7426;
+}
+
+.add-course-button:active {
+  background: black;
+  color: #ff7426;
   border-color: #ff7426;
 }

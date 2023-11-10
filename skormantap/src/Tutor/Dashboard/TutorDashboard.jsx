@@ -1,7 +1,12 @@
 import React from "react";
-import TutorNavbar from "../Navbar/Navbar";
+import { TutorNavbar } from "../../components/Navbar/Navbar";
+import "../../index.css";
 import "./TutorDashboard.css";
+import BarChart from "./BarChart.jpg";
+import LineChart from "./LineChart.jpg";
+import PieChart from "./PieChart.jpg";
 import { Link } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
 
 const TutorDashboard = () => {
   return (
@@ -10,15 +15,16 @@ const TutorDashboard = () => {
 
       <div className="index">
         <div className="overview">
-          <div className="announcement-area">
-            <p className="announcement-area-text">
-              Announcement Area Like E-learn USM
-              <br />
-              can be a reminder like what is the upcoming classNamees
-            </p>
-            <p className="student-overview-area">
-              Overview about total students enrolled
-            </p>
+          <div className="statistic-area">
+            <div className="barchart">
+              <img src={BarChart} className="chart" alt="BarChart" />
+            </div>
+            <div className="piechart">
+              <img src={PieChart} className="chart" alt="PieChart" />
+            </div>
+            <div className="linechart">
+              <img src={LineChart} className="chart" alt="LineChart" />
+            </div>
           </div>
         </div>
         <div className="enrolled-courses-area">
@@ -75,6 +81,7 @@ const TutorDashboard = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

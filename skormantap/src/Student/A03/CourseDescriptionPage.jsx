@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
+import { StudentNavbar } from "../../components/Navbar/Navbar";
 import "./CourseDescriptionPage.css";
 import Tick from "./tick.svg";
 import CourseInfoImage from "./CourseInfoImage.png";
@@ -9,12 +9,14 @@ import stroke from "./stroke.png";
 import clock from "./clock.svg";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Footer from "components/Footer/Footer";
 
 function A03() {
   return (
     <div>
-      <Navbar />
+      <StudentNavbar />
       <CourseDescriptionContent />
+      <Footer />
     </div>
   );
 }
@@ -57,7 +59,7 @@ function TeacherInfoBox() {
         </li>
         <li>
           <img src={Tick} className="Tick" />{" "}
-          <span className="ListItemText">Love to eat children</span>
+          <span className="ListItemText">Patient</span>
         </li>
         <li>
           <img src={Tick} className="Tick" />{" "}
@@ -134,7 +136,7 @@ function CourseInfoBox() {
             </li>
             <li>
               <img src={Tick} className="Tick" />{" "}
-              <span className="ListItemText-subject">Love to eat children</span>
+              <span className="ListItemText-subject">Patient</span>
             </li>
             <li>
               <img src={Tick} className="Tick" />{" "}
@@ -164,31 +166,31 @@ function SubjectInfoBox() {
       <p className="SubjectInfoBox-Title">This course includes</p>
       <div className="SubjectInforBox-text">
         <div className="SubjectInfoItem">
-          <img src={clock} alt="Clock Icon" />
+          <img src={Tick} alt="Clock Icon" />
           <p className="ListItemText-subject">62 hours on-demand video</p>
         </div>
         <div className="SubjectInfoItem">
-          <img src={clock} alt="Check Icon" />
+          <img src={Tick} alt="Clock Icon" />
           <p className="ListItemText-subject">100 exercises</p>
         </div>
         <div className="SubjectInfoItem">
-          <img src={clock} alt="Book Icon" />
+          <img src={Tick} alt="Clock Icon" />
           <p className="ListItemText-subject">29 sets of past year paper</p>
         </div>
         <div className="SubjectInfoItem">
-          <img src={clock} alt="Download Icon" />
+          <img src={Tick} alt="Clock Icon" />
           <p className="ListItemText-subject">118 downloadable resources</p>
         </div>
         <div className="SubjectInfoItem">
-          <img src={clock} alt="Mobile Icon" />
+          <img src={Tick} alt="Clock Icon" />
           <p className="ListItemText-subject">Access on mobile and TV</p>
         </div>
         <div className="SubjectInfoItem">
-          <img src={clock} alt="Globe Icon" />
+          <img src={Tick} alt="Clock Icon" />
           <p className="ListItemText-subject">Full lifetime access</p>
         </div>
         <div className="SubjectInfoItem">
-          <img src={clock} alt="Certificate Icon" />
+          <img src={Tick} alt="Clock Icon" />
           <p className="ListItemText-subject">Certificate of completion</p>
         </div>
       </div>
@@ -214,8 +216,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The lesson is great! Very helpful!
           </p>
         </div>
 
@@ -237,8 +238,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The lesson is great! Very helpful!
           </p>
         </div>
 
@@ -260,8 +260,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The lesson is great! Very helpful!
           </p>
         </div>
 
@@ -283,8 +282,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The lesson is great! Very helpful!
           </p>
         </div>
 

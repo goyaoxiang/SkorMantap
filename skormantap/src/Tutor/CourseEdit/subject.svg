@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 35 30" fill="none">
+<path d="M15.6068 6.50824L19.279 12.0165L15.6068 17.5248H10.0985L6.42633 12.0165L10.0985 6.50824H15.6068Z" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.7873 1L28.4595 6.50828L24.7873 12.0166H19.279L15.6068 6.50828L19.279 1H24.7873Z" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.7873 23.0331L28.4595 28.5414" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.42633 1L10.0985 6.50828" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.279 23.0331L17.4429 25.7873" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.0985 17.5249L8.26239 20.279" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.42637 12.0165H4.59027" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.4595 17.5249H33.9678" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.7873 12.0165L28.4595 17.5248L24.7873 23.0331H19.279L15.6068 17.5248L19.279 12.0165H24.7873Z" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.6068 29.4594C16.1138 29.4594 16.5248 29.0484 16.5248 28.5414C16.5248 28.0344 16.1138 27.6234 15.6068 27.6234C15.0997 27.6234 14.6887 28.0344 14.6887 28.5414C14.6887 29.0484 15.0997 29.4594 15.6068 29.4594Z" fill="#222222"/>
+<path d="M6.42629 23.9511C6.93331 23.9511 7.34433 23.5401 7.34433 23.0331C7.34433 22.5261 6.93331 22.1151 6.42629 22.1151C5.91926 22.1151 5.50824 22.5261 5.50824 23.0331C5.50824 23.5401 5.91926 23.9511 6.42629 23.9511Z" fill="#222222"/>
+<path d="M0.918047 12.9346C1.42507 12.9346 1.83609 12.5236 1.83609 12.0166C1.83609 11.5095 1.42507 11.0985 0.918047 11.0985C0.411024 11.0985 0 11.5095 0 12.0166C0 12.5236 0.411024 12.9346 0.918047 12.9346Z" fill="#222222"/>
+</svg>

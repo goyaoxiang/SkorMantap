@@ -20,8 +20,11 @@
   line-height: 70px;
   font-size: 20px;
   font-family: DM Serif Text;
+  /* align-items: center;
+  text-align: center; */
+  color: #e8e8e8;
 }
 
-.navbar ul li a {
-  color: #e8e8e8;
+.logo {
+  height: 70px;
 }

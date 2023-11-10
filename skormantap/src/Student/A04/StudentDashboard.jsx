@@ -1,16 +1,21 @@
 import React from "react";
 import "./StudentDashboard.css";
-import Navbar from "../Components/Navbar";
+import { StudentNavbar } from "../../components/Navbar/Navbar";
 import stars from "./5-stars.png";
 import stroke from "./stroke.png";
 import { useState } from "react";
 import clock from "./clock.svg";
+import Footer from "../../components/Footer/Footer";
+import subjectIcon from "../A02/subject.svg";
+import syllabusIcon from "../A02/syllabus.svg";
+import modeIcon from "../A02/mode.svg";
 
 function A04() {
   return (
     <div>
-      <Navbar />
+      <StudentNavbar />
       <CourseDescriptionContent />
+      <Footer />
     </div>
   );
 }
@@ -25,10 +30,7 @@ function TeacherInfoBox() {
       />
       <p className="TeacherName">Cynthia A. Nelson</p>
       <p className="TeacherPosition">Professor @George Brown College</p>
-      <p className="TeacherDescription">
-        Ut enim ad minim veniam, quis nost exercitation ullamco laboris nisi ut
-        allquip ex commodo.
-      </p>
+      <p className="TeacherDescription">A very experienced teacher.</p>
       <p className="MoreAboutTeacher">More about the teacher</p>
     </div>
   );
@@ -52,13 +54,12 @@ function CourseInfoBox() {
         </div>
         <div className="CourseInfo-Description-Box">
           <p className="CourseInfo-Description">
-            This is the place where teacher can leave some notes and can be
-            updated weekly so that the student can view it via the student
-            dashboard... still brainstorming on what i can write or blow here
+            This is the place where the course description will be placed.
+            Students can read the description of the course here.
           </p>
           <p className="CourseInfo-seereview">see more reviews</p>
 
-          <button className="CourseInfo-button">Add to Cart</button>
+          <button className="CourseInfo-button">More Info</button>
         </div>
       </div>
     </div>
@@ -67,7 +68,9 @@ function CourseInfoBox() {
 
 function CourseContentSectionBox() {
   const [activeAccordion, setActiveAccordion] = useState(null);
-  const [embedUrl, setEmbedUrl] = useState('https://docs.google.com/document/d/1abnIYCKRK9f9I-5y7Gp2Ug2o-V9XcKyqNMLaZ-9ZSgY/edit');
+  const [embedUrl, setEmbedUrl] = useState(
+    "https://docs.google.com/document/d/1mjwP21tWlfwktJ1v6hSVjPMWfBpGlmc5DSHFeqZ3R4U/edit?usp=sharing"
+  );
 
   const toggleAccordion = (index) => {
     if (activeAccordion === index) {
@@ -80,48 +83,73 @@ function CourseContentSectionBox() {
   const courseContent = Array.from({ length: 15 }, (_, i) => ({
     title: `Lesson ${i + 1}`,
     items: [
-      { text: "Chapter Description", icon: clock, link: 'https://www.bilibili.com/video/BV1Zg4y1R7Lj/?spm_id_from=333.1007.tianma.1-1-1.click' },
-      { text: "Chapter Notes", icon: clock, link: 'https://elearning.usm.my/sidang2324/pluginfile.php/133184/mod_resource/content/11/Lab_02.pdf' },
-      { text: "Chapter Videos", icon: clock, link: 'https://chat.openai.com/c/defb8ace-2c36-4b63-9b23-30243118985b' },
-      { text: "Chapter Exercise", icon: clock, link: 'https://docs.google.com/document/d/1abnIYCKRK9f9I-5y7Gp2Ug2o-V9XcKyqNMLaZ-9ZSgY/edit' },
+      {
+        text: "Chapter Description",
+        icon: stars,
+        link: "https://docs.google.com/document/d/1mjwP21tWlfwktJ1v6hSVjPMWfBpGlmc5DSHFeqZ3R4U/edit?usp=sharing",
+      },
+      {
+        text: "Chapter Notes",
+        icon: subjectIcon,
+        link: "https://fliphtml5.com/zschb/ispf/basic",
+      },
+      {
+        text: "Chapter Videos",
+        icon: modeIcon,
+        link: "https://www.pexels.com/video/an-open-book-2268807/",
+      },
+      {
+        text: "Chapter Exercise",
+        icon: syllabusIcon,
+        link: "https://trial.spmpaper.me/2020/Matematik%20(Math)/Penang/2020%20Penang%20Matematik%20K1.pdf",
+      },
     ],
   }));
 
   return (
-    <div >
+    <div>
       <h1>Course Content</h1>
       <div className="Biggest-box">
-      <div className="CourseContent-Box">
-        {courseContent.map((section, index) => (
-          <div key={index} className="Accordion-Section">
-            <button
-              className={`Accordion-Button ${activeAccordion === index ? "active" : ""}`}
-              onClick={() => toggleAccordion(index)}
-            >
-              <div className="button-content">
-                <div className="title">{section.title}</div>
-                <div className={`dropdown-symbol ${activeAccordion === index ? "rotate" : ""}`}>▼</div>
-              </div>
-              {activeAccordion === index && (
-                <div className="Accordion-Content">
-                  <ul>
-                    {section.items.map((item, itemIndex) => (
-                      <li key={itemIndex} onClick={() => setEmbedUrl(item.link)}>
-                        <img src={item.icon} alt={item.text} />
-                        {item.text}
-                      </li>
-                    ))}
-                  </ul>
+        <div className="CourseContent-Box">
+          {courseContent.map((section, index) => (
+            <div key={index} className="Accordion-Section">
+              <button
+                className={`Accordion-Button ${
+                  activeAccordion === index ? "active" : ""
+                }`}
+                onClick={() => toggleAccordion(index)}
+              >
+                <div className="button-content">
+                  <div className="title">{section.title}</div>
+                  <div
+                    className={`dropdown-symbol ${
+                      activeAccordion === index ? "rotate" : ""
+                    }`}
+                  >
+                    ▼
+                  </div>
                 </div>
-              )}
-            </button>
-          </div>
-        ))}
+                {activeAccordion === index && (
+                  <div className="Accordion-Content">
+                    <ul>
+                      {section.items.map((item, itemIndex) => (
+                        <li
+                          key={itemIndex}
+                          onClick={() => setEmbedUrl(item.link)}
+                        >
+                          <img src={item.icon} alt={item.text} />
+                          {item.text}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </button>
+            </div>
+          ))}
+        </div>
+        <EmbedNotes url={embedUrl} />
       </div>
-      <EmbedNotes url={embedUrl} />
-      </div>
-      
-      
     </div>
   );
 }
@@ -133,8 +161,6 @@ function EmbedNotes({ url }) {
     </div>
   );
 }
-
-
 
 function CommentSectionBox() {
   return (
@@ -154,8 +180,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 
@@ -177,8 +202,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 
@@ -200,8 +224,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 
@@ -223,8 +246,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 
@@ -248,7 +270,6 @@ function CourseDescriptionContent() {
 
       <div className="Lesson-TwoBox">
         <CourseContentSectionBox />
-
       </div>
       <CommentSectionBox />
     </div>

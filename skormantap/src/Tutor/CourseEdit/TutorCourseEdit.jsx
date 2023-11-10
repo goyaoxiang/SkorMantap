@@ -1,16 +1,21 @@
 import React from "react";
-import TutorNavbar from "../Navbar/Navbar";
+import { TutorNavbar } from "../../components/Navbar/Navbar";
 import "./TutorCourseEdit.css";
 import stars from "./5-stars.png";
 import stroke from "./stroke.png";
 import { useState } from "react";
 import clock from "./clock.svg";
+import Footer from "../../components/Footer/Footer";
+import subjectIcon from "./subject.svg";
+import syllabusIcon from "./syllabus.svg";
+import modeIcon from "./mode.svg";
 
 const TutorCourseEdit = () => {
   return (
     <div className="tutor-course-edit">
       <TutorNavbar />
       <CourseDescriptionContent />
+      <Footer />
     </div>
   );
 };
@@ -25,10 +30,7 @@ function TeacherInfoBox() {
       />
       <p className="TeacherName">Cynthia A. Nelson</p>
       <p className="TeacherPosition">Professor @George Brown College</p>
-      <p className="TeacherDescription">
-        Ut enim ad minim veniam, quis nost exercitation ullamco laboris nisi ut
-        allquip ex commodo.
-      </p>
+      <p className="TeacherDescription">A very experienced teacher.</p>
       <p className="MoreAboutTeacher">More about the teacher</p>
     </div>
   );
@@ -52,9 +54,8 @@ function CourseInfoBox() {
         </div>
         <div className="CourseInfo-Description-Box">
           <p className="CourseInfo-Description">
-            This is the place where teacher can leave some notes and can be
-            updated weekly so that the student can view it via the student
-            dashboard... still brainstorming on what i can write or blow here
+            This is the place where the course description will be placed.
+            Students can read the description of the course here.
           </p>
           <p className="CourseInfo-seereview">see more reviews</p>
 
@@ -84,22 +85,22 @@ function CourseContentSectionBox() {
     items: [
       {
         text: "Chapter Description",
-        icon: clock,
+        icon: stars,
         link: "https://www.bilibili.com/video/BV1Zg4y1R7Lj/?spm_id_from=333.1007.tianma.1-1-1.click",
       },
       {
         text: "Chapter Notes",
-        icon: clock,
+        icon: subjectIcon,
         link: "https://elearning.usm.my/sidang2324/pluginfile.php/133184/mod_resource/content/11/Lab_02.pdf",
       },
       {
         text: "Chapter Videos",
-        icon: clock,
+        icon: modeIcon,
         link: "https://chat.openai.com/c/defb8ace-2c36-4b63-9b23-30243118985b",
       },
       {
         text: "Chapter Exercise",
-        icon: clock,
+        icon: syllabusIcon,
         link: "https://docs.google.com/document/d/1abnIYCKRK9f9I-5y7Gp2Ug2o-V9XcKyqNMLaZ-9ZSgY/edit",
       },
     ],
@@ -179,8 +180,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 
@@ -202,8 +202,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 
@@ -225,8 +224,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 
@@ -248,8 +246,7 @@ function CommentSectionBox() {
           <img src={stars} className="comment-Stars" alt="Stars" />
           <p className="comment-user-name">John Doe</p>
           <p className="comment-user-comment">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The course is very good. I like it very much. I will recommend it.
           </p>
         </div>
 

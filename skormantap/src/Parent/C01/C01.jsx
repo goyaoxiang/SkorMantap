@@ -1,44 +1,16 @@
 import "../../index.css";
 import "./C01.css";
-import logo from "../SkorMantap-Logo.png";
 import man from "./mr bean photo.jpg";
-import "../iconfont/iconfont.css";
+import "../../components/iconfont/iconfont.css";
 import { Link } from "react-router-dom";
+import { ParentNavbar } from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
-export const C01 = () => {
+const C01 = () => {
   return (
     <div className="C01">
       <section>
-        <div className="navbar">
-          <div className="navleft">
-            <ul>
-              <li>
-                <Link to="/parent">
-                  <img src={logo} alt="SkorMantap" />
-                </Link>
-              </li>
-              <li>
-                <Link to="/parent/children_list">Children</Link>
-              </li>
-              <li>
-                <a href="#">Courses</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="navright">
-            <ul>
-              <li>
-                <a href="#">Language</a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src={logo} alt="User Profile" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <ParentNavbar />
 
         <div className="childList wrapper">
           <ul>
@@ -251,9 +223,9 @@ export const C01 = () => {
           style={{
             marginTop: "50px",
             height: "50px",
-            backgroundColor: "#ff7426",
           }}
         ></div>
+        <Footer />
       </section>
     </div>
   );

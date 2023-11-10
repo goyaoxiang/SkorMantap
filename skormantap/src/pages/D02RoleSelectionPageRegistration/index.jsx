@@ -1,15 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Img, List, Text } from "components";
-import Footer from "components/Footer";
+import Footer from "components/Footer/Footer";
+import rectangleFive from "../../assets/Images/public/img_rectangle5.png";
+import rectangleSix from "../../assets/Images/public/img_rectangle6.png";
+import rectangleSeven from "../../assets/Images/public/img_rectangle7.png";
+import bg from "../../assets/Images/public/img_group6.png";
 
 const D02RoleSelectionPageRegistrationPage = () => {
   return (
     <>
-      <div className="bg-white-A700 font-dmseriftext h-[2050px] mx-auto relative w-full">
+      <div className="bg-white-A700 font-dmseriftext h-[1366px] mx-auto relative w-full">
         <div
           className="bg-cover bg-no-repeat flex flex-col h-full items-center justify-start m-auto pb-[1366px] w-full"
-          style={{ backgroundImage: "url('images/img_group6.png')" }}
+          style={{ backgroundImage: `url(${bg})` }}
         >
           <div className="flex flex-col items-center justify-start w-full">
             <div className="bg-yellow-900 flex flex-row md:gap-10 items-center justify-between p-[18px] w-full">
@@ -41,7 +45,7 @@ const D02RoleSelectionPageRegistrationPage = () => {
               <div className="h-[369px] relative rounded-[40px] shadow-bs w-full">
                 <Img
                   className="h-[369px] m-auto object-cover rounded-[40px] w-full"
-                  src="images/img_rectangle5.png"
+                  src={rectangleFive}
                   alt="rectangleFive"
                 />
                 <Link to="/student_login">
@@ -57,7 +61,7 @@ const D02RoleSelectionPageRegistrationPage = () => {
               <div className="h-[369px] relative rounded-[40px] shadow-bs w-full">
                 <Img
                   className="h-[369px] m-auto object-cover rounded-[40px] w-full"
-                  src="images/img_rectangle6.png"
+                  src={rectangleSix}
                   alt="rectangleSix"
                 />
                 <Link to="/parent_login">
@@ -73,7 +77,7 @@ const D02RoleSelectionPageRegistrationPage = () => {
               <div className="h-[369px] relative rounded-[40px] shadow-bs w-full">
                 <Img
                   className="h-[369px] m-auto object-cover rounded-[40px] w-full"
-                  src="images/img_rectangle7.png"
+                  src={rectangleSeven}
                   alt="rectangleSeven"
                 />
                 <Link to="/tutor_login">
@@ -89,7 +93,7 @@ const D02RoleSelectionPageRegistrationPage = () => {
             </List>
           </div>
         </div>
-        <Footer className="absolute bg-gray-100 bottom-[0] flex font-gilroybold gap-2.5 h-[418px] md:h-auto inset-x-[0] items-center justify-center mx-auto outline outline-[1.5px] outline-blue_gray-100 md:px-5 rounded-tl-[56px] rounded-tr-[56px] w-full" />
+        <Footer className="absolute bottom-[0]" />
       </div>
     </>
   );

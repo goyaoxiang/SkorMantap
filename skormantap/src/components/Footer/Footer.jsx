@@ -1,28 +1,45 @@
 import React from "react";
 import { Img, Text } from "components";
+import { Link } from "react-router-dom";
+import call from "../../assets/Images/public/img_call.svg";
+import mail from "../../assets/Images/public/img_mail.svg";
+import facebook from "../../assets/Images/public/img_facebook.svg";
+import group121 from "../../assets/Images/public/img_group121.png";
+import linkedin from "../../assets/Images/public/img_linkedin.svg";
+import twitter from "../../assets/Images/public/img_twitter.svg";
+import youtube from "../../assets/Images/public/img_youtube.svg";
 
 const Footer = (props) => {
   return (
     <>
-      <footer className={props.className}>
+      <footer
+        className={props.className}
+        style={{
+          height: "419px",
+          width: "100%",
+          paddingTop: "100px",
+          paddingLeft: "306px",
+          borderRadius: "56px 56px 0px 0px",
+          border: "1px solid #E5E5E5",
+          backgroundColor: "#F7F7F7",
+        }}
+      >
         <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-[77%] md:w-full">
           <div className="flex flex-col items-center justify-start w-1/4 md:w-full">
             <ul className="flex flex-col items-start justify-start w-full common-column-list">
-              <li>
-                <Text
-                  className="sm:text-4xl md:text-[38px] text-[40px] text-black-900"
-                  size="txtGilroyBold40"
-                >
-                  SkorMantap
-                </Text>
-              </li>
+              <Link to="/">
+                <li>
+                  <Text
+                    className="sm:text-4xl md:text-[38px] text-[40px] text-black-900"
+                    size="txtGilroyBold40"
+                  >
+                    SkorMantap
+                  </Text>
+                </li>
+              </Link>
               <li>
                 <div className="flex flex-row gap-3.5 items-start justify-start mt-[25px]">
-                  <Img
-                    className="h-6 w-6"
-                    src="images/img_call.svg"
-                    alt="call"
-                  />
+                  <Img className="h-6 w-6" src={call} alt="call" />
                   <Text
                     className="text-black-900 text-xl"
                     size="txtGilroySemiBold20"
@@ -33,11 +50,7 @@ const Footer = (props) => {
               </li>
               <li>
                 <div className="flex flex-row gap-3.5 items-start justify-start mt-[9px]">
-                  <Img
-                    className="h-6 w-6"
-                    src="images/img_mail.svg"
-                    alt="mail"
-                  />
+                  <Img className="h-6 w-6" src={mail} alt="mail" />
                   <Text
                     className="mt-0.5 text-black-900 text-xl"
                     size="txtGilroySemiBold20"
@@ -48,31 +61,15 @@ const Footer = (props) => {
               </li>
               <li>
                 <div className="flex flex-row items-center justify-between mt-[22px]">
-                  <Img
-                    className="h-[45px]"
-                    src="images/img_facebook.svg"
-                    alt="facebook"
-                  />
+                  <Img className="h-[45px]" src={facebook} alt="facebook" />
                   <Img
                     className="h-[45px] md:h-auto object-cover"
-                    src="images/img_group121.png"
+                    src={group121}
                     alt="group121"
                   />
-                  <Img
-                    className="h-[45px]"
-                    src="images/img_linkedin.svg"
-                    alt="linkedin"
-                  />
-                  <Img
-                    className="h-[45px]"
-                    src="images/img_twitter.svg"
-                    alt="twitter"
-                  />
-                  <Img
-                    className="h-[45px]"
-                    src="images/img_youtube.svg"
-                    alt="youtube"
-                  />
+                  <Img className="h-[45px]" src={linkedin} alt="linkedin" />
+                  <Img className="h-[45px]" src={twitter} alt="twitter" />
+                  <Img className="h-[45px]" src={youtube} alt="youtube" />
                 </div>
               </li>
             </ul>
