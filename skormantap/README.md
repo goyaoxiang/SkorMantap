@@ -29,3 +29,8 @@ Contact us, *team daheckkkk*, for more details!
 | Leon Then Leong Onn | leonthen0218@gmail.com |
 | Cheng Chea Hao | cheahaocheng@gmail.com|
 
+---
+
+Useful Links:
+* [Video Presentation](https://youtu.be/pTtonqS6PG0)
+* [Project Website](https://skormantap.netlify.app/)
